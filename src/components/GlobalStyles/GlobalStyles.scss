@@ -2,8 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap');
 
+:root {
+  --header-wrapper-height: 60px;
+  --header-inner-width: 1150px;
+  --default-layout-container-width: 1150px;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
