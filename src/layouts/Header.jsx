@@ -8,6 +8,7 @@ import styles from './Header.module.scss';
 import { ReactComponent as Logo } from '~/assets/images/logo.svg';
 import Popper from '~/components/Popper/Popper';
 import AccountItem from '~/components/AccountItem/AccountItem';
+import Button from '~/components/Button/Button';
 
 const cx = classNames.bind(styles);
 
@@ -51,7 +52,12 @@ const Header = () => {
             </button>
           </div>
         </Tippy>
-        <div className={cx('actions')}>Actions</div>
+        <div className={cx('actions')}>
+          <Button text>Upload</Button>
+          <Button onClick={() => alert('hello')} className={cx('custom-login')}>
+            Log in
+          </Button>
+        </div>
       </div>
     </header>
   );
